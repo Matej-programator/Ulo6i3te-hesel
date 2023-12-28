@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js" lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>Generator hesel</title>
+    <link rel="icon" type="image/x-ico" href="./zamek.jpg">
+    <script src="script.js"></script>
+  
+</head>
+<body onload="nactiVygenerovanaHesla()">
+    <h1>Generator hesel</h1>
+    <div>
+        <div>
+            <label>Mala<input type="checkbox" checked id=
+            "checkbox-mala"></label>
+        </div>
+        <div>
+            <label>Velka<input type="checkbox" id=
+            "checkbox-velka"></label>
+        </div>
+        <div>
+            <label>Cisla<input type="checkbox" checked id=
+            "checkbox-cisla"></label>
+        </div>
+        <div>
+            <label>Specialni Znaky<input type="checkbox" id=
+            "checkbox-specialni-znaky"></label>
+        </div>
+        <div>
+            <label>Delka hesla<input type='number' min="1" value=
+            "8" id="delka-hesla"></label>
+        </div>
+        <div>
+            <button id="generator" onclick="generuj()">Generuj
+            heslo</button>
+        </div>
+    </div>
+   <div id="vygenerovane-heslo"></div>
+  
+</body>
+</html>
